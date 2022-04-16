@@ -1,12 +1,12 @@
 baseURL: https://codeforlearner.netlify.app
 languageCode: en-us
-title: Code Learner
+title: Coding for Learner
 paginate: 5
 theme: "PaperMod"
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Code Learner
+  title: Coding for Learner
   description: "Learn Code with easy steps"
   keywords: [Blog, Portfolio, PaperMod]
   author: Alapakam Dorababu
@@ -46,10 +46,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 
   homeInfoParams:
-    Title: "Code Learner"
+    Title: " Coding for Learner"
     Content: >
-      Welcome to Code Learner.
-      ** Code Learner ** is a beginner friendly coding blog.
+      Welcome to  Coding for Learner.
+      **  Coding for Learner ** is a beginner friendly coding blog.
 
 outputs:
   home:
