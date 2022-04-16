@@ -1,4 +1,84 @@
-baseURL: http://example.org/
+baseURL: https://code-learner.netlify.app
 languageCode: en-us
-title: My New Hugo Site
+title: Code Learner
+paginate: 5
 theme: "PaperMod"
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Code Learner
+  description: "Learn Code with easy steps"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Alapakam Dorababu
+  # author: ["Me", "You"] # multiple authors
+  defaultTheme: auto # dark, light
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  homeInfoParams:
+    Title: "Code Learner"
+    Content: >
+      Welcome to Code Learner.
+      ** Code Learner ** is a beginner friendly coding blog.
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 40
+
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 50
