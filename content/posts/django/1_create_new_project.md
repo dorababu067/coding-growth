@@ -1,7 +1,7 @@
 ---
 title: "Creating new project in django"
 date: 2022-04-15T04:40:06+05:30
-tags: ["Djagno"]
+tags: ["Django"]
 categories: ["Django"]
 ---
 
