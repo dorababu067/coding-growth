@@ -30,9 +30,10 @@ params:
     apple_touch_icon: "apple-touch-icon.png"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
+    # hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    # hiddenInSingle: true # hide on single page
+    # linkFullImage: true # open blog if click on cover image
 
   # for search
   # https://fusejs.io/api/options.html
@@ -48,8 +49,15 @@ params:
   homeInfoParams:
     Title: " Coding for Learner"
     Content: >
-      Welcome to  Coding for Learner.
-      **  Coding for Learner ** is a beginner friendly coding blog.
+      Coding for Learner is a welcoming blog tailored for beginners in the world of coding. With a user-friendly approach, it provides easy-to-follow tutorials, tips, and insights to help newcomers grasp coding concepts effortlessly. Dive into the world of programming with confidence and guidance at Coding for Learner, where learning to code is made accessible and enjoyable
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
 
 outputs:
   home:
@@ -68,15 +76,15 @@ menu:
       url: /categories/
       weight: 20
 
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 30
 
-    - identifier: archives
-      name: Archives
-      url: /archives/
-      weight: 40
+    # - identifier: archives
+    #   name: Archives
+    #   url: /archives/
+    #   weight: 40
 
     - identifier: search
       name: Search

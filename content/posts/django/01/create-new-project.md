@@ -3,6 +3,10 @@ title: "Creating new project in django"
 date: 2022-04-15T04:40:06+05:30
 tags: ["Django"]
 categories: ["Django"]
+cover:
+  image: "cover/papermod-cover.png"
+  alt: "this is post image"
+  caption: "This is image caption"
 ---
 
 `Django` is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Django makes it easier to build better web apps more quickly and with less code. It’s free and open source.
