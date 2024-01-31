@@ -7,7 +7,7 @@ categories: ["SQL"]
 
 ## SELECT FROM
 
-Fetch all the records in the table, here `*` will reffer to the all columns in the table
+Fetch all the records in the table, here `*` will refer to the all columns in the table
 
 ```sql
 SELECT * FROM person;
