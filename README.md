@@ -2,4 +2,4 @@ Coding Growth is a welcoming blog tailored for beginners in the world of coding.
 
 ## Coding Growth Status Badge
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/undefined/deploy-status)](https://app.netlify.com/sites/raghsonline/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee1fad41-95a4-4f9c-a851-b097bb95879a/deploy-status)](https://app.netlify.com/sites/codingrowth/deploys)
