@@ -1,5 +1,5 @@
 ---
-title: "SQL Basics Two"
+title: "SQL Basics Second Part"
 date: 2022-05-21T12:14:49+05:30
 tags: ["SQL"]
 categories: ["SQL"]
