@@ -383,7 +383,7 @@ In Python, the terms "new" and "override" are often associated with method resol
    
 ### 8. Why is finalize used?   
 In Python, the `__del__` method, also known as the "finalizer" or "destructor," is used for garbage collection and cleanup. However, it's important to note that relying on `__del__` for cleanup purposes has some limitations and may not be the best practice in all scenarios.   
-#### __del__ Method:   
+#### \_\_del\_\_ Method:   
 The `__del__` method is automatically called by the Python interpreter when an object is about to be destroyed, typically when there are no more references to the object. It can be used to perform cleanup actions such as releasing resources (closing files, network connections, etc.) associated with the object.   
 Example: 
 
