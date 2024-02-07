@@ -88,7 +88,6 @@ In Python, the term "scope" refers to the region or context in a program where a
     - Once the function execution is complete, the local variables are destroyed, and their scope ends.   
    
     ```python
-
     def example_function():
         x = 10  # Local variable
         print(x)
@@ -103,7 +102,6 @@ In Python, the term "scope" refers to the region or context in a program where a
     - Global variables persist throughout the lifetime of the program.   
    
     ```python
-
     y = 20  # Global variable
 
     def another_function():
@@ -116,7 +114,6 @@ In Python, the term "scope" refers to the region or context in a program where a
     In addition to local and global scopes, Python also has a concept of "enclosing" or "nested" scopes, which occurs when there are nested functions. In this case, a variable can be in the local scope of one function and in the enclosing scope of another:   
 
     ```python
-
     def outer_function():
         z = 30  # Enclosing scope variable
 
@@ -147,7 +144,6 @@ In Python, lists and tuples are both data structures used to store ordered colle
 5. **Example:**   
    
     ```python
-
     my_list = [1, 2, 3, 'hello', [4, 5]]
     my_list.append(6)
     print(my_list)  # Output: [1, 2, 3, 'hello', [4, 5], 6]
@@ -166,7 +162,6 @@ In Python, lists and tuples are both data structures used to store ordered colle
     - Tuples are suitable when you have a fixed collection of elements that should not be modified, such as coordinates, configurations, or data that should remain constant.   
 5. **Example:**   
     ```python
-
     my_tuple = (1, 2, 3, 'hello', (4, 5))
     # Attempting to modify a tuple will result in an error:
     # my_tuple[0] = 10  # Raises TypeError: 'tuple' object does not support item assignment
@@ -211,7 +206,6 @@ In Python, `pass` is a null statement or a no-operation statement. It serves as 
 Here's an example where `pass` might be used:   
 
 ```python
-
 def my_function():
     # TODO: Implement this function later
     pass
@@ -221,7 +215,6 @@ In the above example, the `pass` statement is used as a temporary placeholder in
 Similarly, `pass` can be used in other situations where a statement is required by Python syntax but no action is needed or intended. For example, in a loop or an if statement:   
 
 ```python
-
 for i in range(5):
   # TODO: Add loop body later
   pass
@@ -240,7 +233,6 @@ A module is a file containing Python code that defines variables, functions, and
 Example of a module (let's call it `my_module.py`):   
 
 ```python
-
 # my_module.py
 
 def greet(name):
@@ -257,7 +249,6 @@ if __name__ == "__main__":
 You can then use this module in another script:  
 
 ```python
-
 # another_script.py
 import my_module
 
@@ -271,7 +262,6 @@ A package is a way of organizing related modules into a single directory hierarc
 Example of a package structure:   
 
 ```python
-
 my_package/
 |-- __init__.py
 |-- module1.py
@@ -286,7 +276,6 @@ Here, `my_package` is a package, and `module1.py`, `module2.py`, and `subpackage
 Example usage:   
 
 ```python
-
 # main_script.py
 from my_package import module1, subpackage.module3
 
@@ -306,7 +295,6 @@ In Python, the concepts of global, protected (or "protected internal"), and priv
     Example:  
 
     ```python
-
     global_variable = 10
 
     def my_function():
@@ -322,7 +310,6 @@ In Python, the concepts of global, protected (or "protected internal"), and priv
     Example:   
 
     ```python
-
     class MyClass:
         def __init__(self):
             self._protected_variable = 20
@@ -342,7 +329,6 @@ In Python, the concepts of global, protected (or "protected internal"), and priv
     Example:   
 
     ```python
-
     class MyClass:
         def __init__(self):
             self.__private_variable = 30
@@ -363,7 +349,6 @@ In Python, `self` is a conventionally used name for the first parameter of a met
 Here's a simple example to illustrate the use of `self`:   
 
 ```python
-
 class MyClass:
     def __init__(self, value):
         self.value = value
@@ -392,7 +377,6 @@ Using `self` allows you to differentiate between instance variables (attributes 
 Here's a basic example:  
 
 ```python
-
 class MyClass:
     def __init__(self, value):
         self.value = value
@@ -417,14 +401,12 @@ In Python, `break`, `continue`, and `pass` are control flow statements that affe
     Example using `break` with a `while` loop:   
 
     ```python
-
     i = 0
     while i < 5:
         print(i)
         if i == 3:
             break
         i += 1
-
 
     ```
     Output:
@@ -444,7 +426,6 @@ In Python, `break`, `continue`, and `pass` are control flow statements that affe
     Example using `continue` with a `for` loop:   
 
     ```python
-
     for i in range(5):
         if i == 2:
             continue
@@ -455,7 +436,6 @@ In Python, `break`, `continue`, and `pass` are control flow statements that affe
     Output:   
 
     ```python
-
     0
     1
     3
@@ -470,7 +450,6 @@ In Python, `break`, `continue`, and `pass` are control flow statements that affe
     Example using `pass`:   
 
     ```python
-
     for i in range(5):
         if i == 2:
             pass
@@ -501,7 +480,6 @@ Key concepts related to unit testing in Python:
     Example of a simple test case:   
 
     ```python
-
     import unittest
 
     class MyTestCase(unittest.TestCase):
@@ -522,7 +500,6 @@ Key concepts related to unit testing in Python:
     Example of using `setUp` and `tearDown` methods in a test case:   
 
     ```python
-
     import unittest
 
     class MyTestCase(unittest.TestCase):
@@ -554,7 +531,6 @@ Key concepts related to unit testing in Python:
     Example:  
 
     ```python
-
     import unittest
 
     class MyTestCase(unittest.TestCase):
@@ -575,7 +551,6 @@ Key concepts related to unit testing in Python:
     Example of running tests from the command line:   
 
     ```python
-
     python my_test_module.py
 
     ```
@@ -591,7 +566,6 @@ There are three common styles for writing docstrings in Python:
     - Typically used for simple functions or methods.   
    
     ```python
-
     def add(a, b):
         """Return the sum of two numbers."""
         return a + b
@@ -603,7 +577,6 @@ There are three common styles for writing docstrings in Python:
     - May include information about parameters, return values, and usage examples.   
    
     ```python
-
     def multiply(a, b):
         """
         Multiply two numbers.
@@ -625,7 +598,6 @@ There are three common styles for writing docstrings in Python:
     - Often used in more complex projects or when adhering to specific documentation standards.   
    
     ```python
-
     def divide(dividend, divisor):
         """
         Divide two numbers.
@@ -653,9 +625,7 @@ In Python, slicing is a technique that allows you to extract a portion of a sequ
 The general syntax for slicing is as follows:  
 
 ```python
-
 sequence[start:stop:step]
-
 
 ```
 - `start`: The starting index of the slice (inclusive). If omitted, it defaults to the beginning of the sequence.   
@@ -666,8 +636,6 @@ Here are some examples of slicing in Python:
 1. **Slicing a List:**   
    
 ```python
-
-
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # Extract elements from index 2 to 5 (exclusive)
@@ -687,7 +655,6 @@ print(full_slice)  # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 2. **Slicing a String:**   
    
 ```python
-
 my_string = "Hello, World!"
 
 # Extract characters from index 7 to 12 (exclusive)
@@ -702,7 +669,6 @@ print(reversed_string)  # Output: !dlroW ,olleH
 3. **Slicing a Tuple:**   
 
 ```python
-
 my_tuple = (10, 20, 30, 40, 50)
 
 # Extract elements from index 1 to 4 (exclusive)
